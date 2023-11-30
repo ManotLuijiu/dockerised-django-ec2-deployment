@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: docker/prod/Dockerfile
-    image: 123456789.dkr.ecr.us-east-1.amazonaws.com/django-api
+    image: 708017729347.dkr.ecr.ap-southeast-1.amazonaws.com/auth-api
     command: gunicorn -w 4 core.wsgi -b 0.0.0.0:8000 --timeout 420
     volumes:
       - ./app:/app
